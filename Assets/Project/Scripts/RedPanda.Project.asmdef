@@ -1,0 +1,16 @@
+{
+    "name": "RedPanda.Project",
+    "rootNamespace": "RedPanda.Project",
+    "references": [
+        "GUID:035ff9edfe4c1f44ca10f575f3fed019"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
