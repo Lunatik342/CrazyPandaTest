@@ -9,7 +9,7 @@ namespace RedPanda.Project.Data
 
         public string Icon()
         {
-            return $"sprite_{Type.ToString().ToLower()}{Rarity.ToString().ToLower()}";
+            return $"sprite_{Type.ToString().ToLower()}_{Rarity.ToString().ToLower()}";
         }
 
         public PromoData(string title, PromoType type, PromoRarity rarity, int cost)

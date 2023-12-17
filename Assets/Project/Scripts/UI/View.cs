@@ -7,6 +7,8 @@ namespace RedPanda.Project.UI
 {
     public abstract class View : MonoBehaviour
     {
+        [SerializeField] private MonoBehaviour[] _subviews;
+        
         protected IUIService UIService { get; private set; }
         protected IExportLocatorScope Container { get; private set; }
         
@@ -15,6 +17,11 @@ namespace RedPanda.Project.UI
         {
             UIService = uiService;
             Container = container;
+
+            foreach (var subview in _subviews)
+            {
+                Container.Inject(subview);
+            }
         }
     }
 }

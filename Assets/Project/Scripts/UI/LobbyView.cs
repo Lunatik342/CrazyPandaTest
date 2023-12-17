@@ -8,7 +8,7 @@ namespace RedPanda.Project.UI
     {
         [SerializeField] private Button _startButton;
         
-        private void Awake()
+        private void Start()
         {
             _startButton.onClick.AddListener(OpenPromoView);
         }

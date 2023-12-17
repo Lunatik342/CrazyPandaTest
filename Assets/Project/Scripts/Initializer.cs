@@ -14,9 +14,10 @@ namespace RedPanda.Project
         {
             _container.Configure(block =>
             {
-                block.Export<UserService>().As<IUserService>().Lifestyle.Singleton();
-                block.Export<PromoService>().As<IPromoService>().Lifestyle.Singleton();
+                block.Export<UserService>().As<IUserService>().As<IObservableCurrency>().Lifestyle.Singleton();
+                block.Export<PromoService>().As<IPromoService>().As<IPromoPurchaseService>().Lifestyle.Singleton();
                 block.Export<UIService>().As<IUIService>().Lifestyle.Singleton();
+                block.Export<GameObjectFactory>().As<IGameObjectFactory>().Lifestyle.Singleton();
             });
 
             _container.Locate<IUserService>();
