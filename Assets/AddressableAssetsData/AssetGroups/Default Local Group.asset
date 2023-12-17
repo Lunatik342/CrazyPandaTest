@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: b41afbc728b13df498cb065b855177d3
+  m_SerializeEntries:
+  - m_GUID: 5be5faba96af13d4191a6652bb3e0a55
+    m_Address: sprite_special_epic
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b85a726f648808949b038ab32fda92f5
+    m_Address: sprite_chest_common
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8542fa350ce5cd048acec7e0d005c13c
+    m_Address: sprite_chest_epic
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: fe4221b4225a1374ea055db250ddf794
+    m_Address: sprite_chest_rare
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 806a30ab725a3064d88865068ac88436
+    m_Address: sprite_inapp_common
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4fdb042ae0eafec49b38018e9f2f879e
+    m_Address: sprite_inapp_epic
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 89c24639d55371f4698762deb10f9325
+    m_Address: sprite_inapp_rare
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2bcb85bda0c93b8458c6645f5f374b7f
+    m_Address: sprite_special_common
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 902507cb251b00a4d857054feb8b7ce8
+    m_Address: sprite_special_rare
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: c44e54b5fbff92747a552d11464a96cb, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 5c1d787768629664996347a40ad78c30, type: 2}
+    - {fileID: 11400000, guid: 5814d4a8f66f7fb44846d3d0948d0466, type: 2}
