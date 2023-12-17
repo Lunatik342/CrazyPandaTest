@@ -5,9 +5,9 @@ using AYellowpaper.SerializedCollections;
 using Grace.DependencyInjection.Attributes;
 using RedPanda.Project.Data;
 using RedPanda.Project.Interfaces;
-using RedPanda.Project.Services;
 using RedPanda.Project.Services.Interfaces;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace RedPanda.Project.UI.PromoView
 {
@@ -16,6 +16,7 @@ namespace RedPanda.Project.UI.PromoView
         [SerializeField] private SerializedDictionary<PromoType, PromoSectionParameters> _sectionsParameters;
         [SerializeField] private Transform _sectionsParent;
         [SerializeField] private PromoSection _sectionPrefab;
+        [SerializeField] private ScrollRect _scrollRect;
 
         private IPromoService _promoService;
         private IGameObjectFactory _gameObjectFactory;
@@ -42,7 +43,7 @@ namespace RedPanda.Project.UI.PromoView
         {
             var promosOfType = GetOrderedPromosOfType(allPromos, promoType);
             var section = _gameObjectFactory.Create(_sectionPrefab, _sectionsParent);
-            section.Initialize(promosOfType, parameters);
+            section.Initialize(promosOfType, parameters, _scrollRect);
         }
 
         private static IOrderedEnumerable<IPromoModel> GetOrderedPromosOfType(IReadOnlyList<IPromoModel> allPromos, PromoType promoType)

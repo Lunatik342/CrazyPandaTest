@@ -1,10 +1,11 @@
 using System.Collections.Generic;
 using Grace.DependencyInjection.Attributes;
 using RedPanda.Project.Interfaces;
-using RedPanda.Project.Services;
 using RedPanda.Project.Services.Interfaces;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.UI.Extensions;
 
 namespace RedPanda.Project.UI.PromoView
 {
@@ -12,6 +13,7 @@ namespace RedPanda.Project.UI.PromoView
     {
         [SerializeField] private Transform _promosParent;
         [SerializeField] private TMP_Text _title;
+        [SerializeField] private ScrollConflictManager _scrollRect;
 
         private IGameObjectFactory _gameObjectFactory;
         
@@ -21,8 +23,9 @@ namespace RedPanda.Project.UI.PromoView
             _gameObjectFactory = gameObjectFactory;
         }
 
-        public void Initialize(IEnumerable<IPromoModel> promoModels, PromoSectionParameters parameters)
+        public void Initialize(IEnumerable<IPromoModel> promoModels, PromoSectionParameters parameters, ScrollRect parentScrollRect)
         {
+            _scrollRect.SetParentScrollRect(parentScrollRect);
             _title.text = parameters.Title;
             SpawnPromoViews(promoModels, parameters.Prefab);
         }

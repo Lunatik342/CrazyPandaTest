@@ -507,6 +507,7 @@ MonoBehaviour:
         <Title>k__BackingField: Specials
   _sectionsParent: {fileID: 3411992220590279458}
   _sectionPrefab: {fileID: 5579462305044099876, guid: d1e0bb6a5aa747b42887dd7f6f32dcb3, type: 3}
+  _scrollRect: {fileID: 3411992219304099340}
 --- !u!1 &3411992220590279459
 GameObject:
   m_ObjectHideFlags: 0
